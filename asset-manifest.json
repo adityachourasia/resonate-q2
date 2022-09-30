@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/resonate-q2/static/css/main.29cd549e.css",
-    "main.js": "/resonate-q2/static/js/main.c0af2972.js",
+    "main.js": "/resonate-q2/static/js/main.20d58140.js",
     "static/js/787.097e58ee.chunk.js": "/resonate-q2/static/js/787.097e58ee.chunk.js",
     "static/media/logo.svg": "/resonate-q2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/resonate-q2/index.html",
     "main.29cd549e.css.map": "/resonate-q2/static/css/main.29cd549e.css.map",
-    "main.c0af2972.js.map": "/resonate-q2/static/js/main.c0af2972.js.map",
+    "main.20d58140.js.map": "/resonate-q2/static/js/main.20d58140.js.map",
     "787.097e58ee.chunk.js.map": "/resonate-q2/static/js/787.097e58ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29cd549e.css",
-    "static/js/main.c0af2972.js"
+    "static/js/main.20d58140.js"
   ]
 }
