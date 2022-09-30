@@ -19,6 +19,9 @@ class User extends Component {
                     <td>{this.props.userInfo.website}</td>
                     <td>{this.props.userInfo.address.city}</td>
                     <td>{this.props.userInfo.company.name}</td>
+                    <td>
+                        <button onClick={this.props.delete}>Delete</button>
+                    </td>
                 </tr>
             // </React.Fragment>
         );

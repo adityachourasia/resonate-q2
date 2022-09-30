@@ -16,11 +16,20 @@ class Users extends Component {
             .then(response => response.json())
             .then(data => {
                 this.setState({ usersInfo: data })
-                console.log("From Users", data)
+                // console.log("From Users", data)
             })
             .catch(err => {
                 console.log(err);
             })
+
+    }
+
+    handleDelete=(id)=>{
+        // console.log("Deleting",id);
+
+//   console.log("Deleting");
+        let newUserInfo=this.state.usersInfo.filter(x=>x.id!==id)
+        this.setState({ usersInfo:newUserInfo})
 
     }
 
@@ -40,6 +49,8 @@ class Users extends Component {
                             <th>Website</th>
                             <th>Address/City</th>
                             <th>Company Name</th>
+                            {/* <th>Action</th> */}
+
                         </tr>
                     </thead>
                     <tbody>
@@ -47,7 +58,8 @@ class Users extends Component {
                 {
                     this.state.usersInfo.map((user) => {
                         // console.log("here",user.id)
-                        return <User key={user.id} userInfo={user} ></User>
+                        return <User key={user.id} userInfo={user} delete={()=>{this.handleDelete(user.id)}}></User>
+                        
                     })
                 }
                 </tbody>
